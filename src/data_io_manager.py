@@ -35,7 +35,7 @@ class LocalDataHandler(BaseDataHandler):
         """
         readers = {
             'json': lambda path: pd.DataFrame(json.load(open(path, 'r'))),
-            'csv': pd.read_csv,
+            'csv': lambda path: pd.read_csv(path, encoding='ISO-8859-1'),
             'parquet': pd.read_parquet
         }
 
@@ -49,6 +49,7 @@ class LocalDataHandler(BaseDataHandler):
                 raise IOError(f"Error reading file at {file_path}: {e}")
         else:
             raise ValueError(f"Unsupported file extension: {file_extension}")
+
 
     def _generate_file_name(self, base_name: str, extension: str, output_dir: str) -> str:
         """
