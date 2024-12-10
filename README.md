@@ -36,10 +36,10 @@ data-pipeline/
 
 - **File Descriptions**:
 
-  - **data_io_manager.py**: Provides methods for reading data from files and writing data to files.
-  - **data_cleaner.py**: Contains methods to clean data and handle transformations.
-  - **db_connections.py**: Establishes connections to PostgreSQL and handles database interactions.
-  - **etl_pipeline.py**: Entry point for executing the ETL process.
+  - `data_io_manager.py`: Provides methods for reading data from files and writing data to files.
+  - `data_cleaner.py`: Contains methods to clean data and handle transformations.
+  - `db_connections.py`: Establishes connections to PostgreSQL and handles database interactions.
+  - `etl_pipeline.py`: Entry point for executing the ETL process.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ Before running the project, ensure the following are installed:
 - Python 3.x
 - PostgreSQL database
 - Python packages listed in `requirements.txt`
-
+  
 ## Setup and Installation
 
 Follow these steps to set up and install the project:
