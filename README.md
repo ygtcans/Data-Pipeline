@@ -25,6 +25,22 @@ data-pipeline/
     └── etl_pipeline.py         # Script to start the ETL process
 ```
 
+## Project Details
+- **Technologies Used**:
+  - Python
+  - Pandas
+  - SQLAlchemy
+  - PostgreSQL
+  - Logging
+  - dotenv 
+
+- **File Descriptions**:
+
+  - **data_io_manager.py**: Provides methods for reading data from files and writing data to files.
+  - **data_cleaner.py**: Contains methods to clean data and handle transformations.
+  - **db_connections.py**: Establishes connections to PostgreSQL and handles database interactions.
+  - **etl_pipeline.py**: Entry point for executing the ETL process.
+
 ## Prerequisites
 
 Before running the project, ensure the following are installed:
@@ -79,18 +95,3 @@ This script will:
 - Removing duplicate rows.
 - Removing highly correlated features.
 
-## Project Details
-- **Technologies Used**:
-  - Python
-  - Pandas
-  - SQLAlchemy
-  - PostgreSQL
-  - Logging
-  - dotenv 
-
-- **File Descriptions**:
-
-  - **data_io_manager.py**: Provides methods for reading data from files and writing data to files.
-  - **data_cleaner.py**: Contains methods to clean data and handle transformations.
-  - **db_connections.py**: Establishes connections to PostgreSQL and handles database interactions.
-  - **etl_pipeline.py**: Entry point for executing the ETL process.
